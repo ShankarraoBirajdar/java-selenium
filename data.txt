@@ -1,0 +1,16 @@
+		
+		FirefoxOptions firefoxOptions=new FirefoxOptions();
+		firefoxOptions.setBinary("C:\\Users\\shabiraj\\AppData\\Local\\Mozilla Firefox\\firebox.exe");
+		driver = new FirefoxDriver(firefoxOptions);
+		driver.get("https://google.com");
+		System.out.println("FireFoxDriver launched successfully...");
+		driver.quit();
+		
+		
+		EdgeOptions edgeOptions = new EdgeOptions();
+		edgeOptions.addArguments("--remote-allow-origins=*");
+
+		WebDriver driver = new EdgeDriver(edgeOptions);
+		driver.get("https://www.google.com");
+		System.out.println("EdgeDriver launched successfully...");
+		driver.quit();
