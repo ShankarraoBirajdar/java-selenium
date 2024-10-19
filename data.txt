@@ -1,6 +1,6 @@
 		
 		FirefoxOptions firefoxOptions=new FirefoxOptions();
-		firefoxOptions.setBinary("C:\\Users\\shabiraj\\AppData\\Local\\Mozilla Firefox\\firebox.exe");
+		firefoxOptions.setBinary("C:\\Users\\username\\AppData\\Local\\Mozilla Firefox\\firebox.exe");
 		driver = new FirefoxDriver(firefoxOptions);
 		driver.get("https://google.com");
 		System.out.println("FireFoxDriver launched successfully...");
